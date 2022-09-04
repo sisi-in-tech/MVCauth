@@ -1,0 +1,33 @@
+<%-include('header')-%>
+
+<div class="text-center center-div" id="login">
+    <div class="container w-25 border py-5">
+        <div class="title pb-5">
+            <h2 class="font-weight-bold">My Web App Ideas</h2>
+            <!-- <span>Log in for the existing user</span> -->
+        </div>
+        <h1>Future Projects</h1>
+        <ul>
+        <% todos.forEach( el => { %>
+                <li class='todoItem' data-id='<%=el._id%>'>
+                    <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.todo %></span>
+                    <span class='del'> Delete </span>
+                </li>
+        <% }) %>    
+        </ul>
+
+        <h2><%= user.userName %> has <%= left %> project in the making.</h2>
+
+        <form action="/todos/createTodo" method='POST'>
+            <input type="text" placeholder="Enter App Idea" name='todoItem'>
+            <button type="submit" class="btn btn-success rounded-pill">Submit</button>
+        </form>
+    
+        <a href="/logout">Logout</a>          
+
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+
+<%-include('footer')-%>
