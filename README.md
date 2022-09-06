@@ -6,7 +6,7 @@ This project updated the user interface design and it improves the maintainabili
 
 **Link to project:** https://github.com/codingtherapist/MVCauth.git 
 
- 
+[![Untitled-design9b4b35499f75a414.gif](https://s4.gifyu.com/images/Untitled-design9b4b35499f75a414.gif)](https://gifyu.com/image/SwiJp)
 
 ## **How It's Made:**
 
